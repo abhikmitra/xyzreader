@@ -1,0 +1,51 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:scrollbarStyle="outsideOverlay"
+            android:paddingTop="116dp"
+            android:paddingLeft="@dimen/list_side_margin"
+            android:paddingRight="@dimen/list_side_margin"
+            android:paddingBottom="28dp" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/toolbar_container"
+        android:layout_width="match_parent"
+        android:layout_height="112dp"
+        android:background="?colorPrimary"
+        android:elevation="8dp">
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                android:layout_width="match_parent"
+                android:layout_height="?actionBarSize"
+                app:layout_collapseMode="pin">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/logo"
+                    android:contentDescription="@string/app_name" />
+
+            </android.support.v7.widget.Toolbar>
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+</FrameLayout><!-- From: file:/D:/Abhik/Nanodegree/xyzreader/XYZReader/src/main/res/layout/activity_article_list.xml -->

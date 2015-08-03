@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/D:/Abhik/Nanodegree/xyzreader/XYZReader/src/main/res/values-sw600dp-land/macro_layout.xml -->
+    <eat-comment/>
+    <bool name="detail_is_card">true</bool>
+    <dimen name="detail_card_top_margin">256dp</dimen>
+    <dimen name="detail_photo_height">600dp</dimen>
+</resources>

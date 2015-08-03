@@ -1,0 +1,1 @@
+http://jgilfelt.github.com/android-actionbarstylegenerator/#name=Bacon&compat=holo&theme=light_dark&actionbarstyle=solid&backColor=b84700%2C100&secondaryColor=452716%2C100&tertiaryColor=452716%2C100&accentColor=f59a31%2C100
