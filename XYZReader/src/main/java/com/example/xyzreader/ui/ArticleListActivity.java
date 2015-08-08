@@ -8,14 +8,14 @@ import android.content.IntentFilter;
 import android.content.Loader;
 import android.database.Cursor;
 import android.os.Bundle;
+import android.support.design.widget.CoordinatorLayout;
+import android.support.design.widget.Snackbar;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.StaggeredGridLayoutManager;
 import android.support.v7.widget.Toolbar;
 import android.text.format.DateUtils;
-import android.util.TypedValue;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
@@ -37,6 +37,8 @@ public class ArticleListActivity extends ActionBarActivity implements
     private Toolbar mToolbar;
     private SwipeRefreshLayout mSwipeRefreshLayout;
     private RecyclerView mRecyclerView;
+    private CoordinatorLayout toolbarContainerView;
+    private Snackbar snackbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,7 +48,8 @@ public class ArticleListActivity extends ActionBarActivity implements
         mToolbar = (Toolbar) findViewById(R.id.toolbar);
 
 
-        final View toolbarContainerView = findViewById(R.id.toolbar_container);
+        toolbarContainerView = (CoordinatorLayout) findViewById(R.id.toolbar_container);
+        snackbar =Snackbar.make(toolbarContainerView, "XYZ reader updated.", Snackbar.LENGTH_SHORT);
 
         mSwipeRefreshLayout = (SwipeRefreshLayout) findViewById(R.id.swipe_refresh_layout);
 
@@ -88,6 +91,9 @@ public class ArticleListActivity extends ActionBarActivity implements
     };
 
     private void updateRefreshingUI() {
+        if(mIsRefreshing == false){
+            snackbar.show();
+        }
         mSwipeRefreshLayout.setRefreshing(mIsRefreshing);
     }
 

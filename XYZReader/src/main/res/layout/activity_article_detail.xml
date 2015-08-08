@@ -1,25 +1,15 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar_container"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
 
+    >
     <android.support.v4.view.ViewPager
         android:id="@+id/pager"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"  />
 
-    <FrameLayout
-        android:id="@+id/up_container"
-        android:background="@android:color/transparent"
-        android:layout_width="match_parent"
-        android:layout_height="?actionBarSize">
+    </android.support.design.widget.CoordinatorLayout>
 
-        <ImageButton
-            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-            android:id="@+id/action_up"
-            android:layout_width="56dp"
-            android:layout_height="?actionBarSize"
-            android:background="?selectableItemBackgroundBorderless"
-            android:contentDescription="@string/up"
-            android:src="@drawable/ic_arrow_back" />
-    </FrameLayout>
-</FrameLayout>
