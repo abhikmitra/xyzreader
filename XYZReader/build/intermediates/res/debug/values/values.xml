@@ -1580,16 +1580,21 @@
     <!-- From: file:/D:/Abhik/Nanodegree/xyzreader/XYZReader/src/main/res/values/styles.xml -->
     <eat-comment/>
     <style name="Theme.Bacon" parent="Theme.AppCompat.Light.NoActionBar">
-        <!-- Main theme colors -->
-        <!--   your app branding color for the app bar -->
-        <item name="colorPrimary">@color/primary</item>
-        <!--   darker variant for the status bar and contextual app bars -->
+         <item name="colorPrimary">@color/primary</item>
         <item name="colorPrimaryDark">@color/primary_dark</item>
-        <!--   theme UI controls like checkboxes and text fields -->
+        <!--<item name="colorPrimaryDark">@android:color/transparent</item>-->
         <item name="colorAccent">@color/accent</item>
         <item name="android:textColor">@color/abc_primary_text_material_dark</item>
         <item name="android:subtitleTextStyle">@color/link_text_material_light</item>
         <item name="windowActionBarOverlay">false</item>
+    </style>
+    <style name="Theme.Bacon.TranslucentActionBar">
+        <item name="android:actionBarStyle">@style/Widget.ActionBar</item>
+    </style>
+    <style name="Theme.Bacon.TranslucentActionBar.ActionBar"/>
+    <style name="Theme.Bacon.TranslucentActionBar.ActionBar.Overlay">
+        <item name="android:actionBarStyle">@style/Widget.ActionBar.Transparent</item>
+        <item name="android:windowActionBarOverlay">true</item>
     </style>
     <!-- From: file:/D:/Abhik/Nanodegree/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values/values.xml -->
     <eat-comment/>
@@ -1598,6 +1603,16 @@
     <style name="ThemeOverlay.AppCompat.Dark" parent="Base.ThemeOverlay.AppCompat.Dark"/>
     <style name="ThemeOverlay.AppCompat.Dark.ActionBar" parent="Base.ThemeOverlay.AppCompat.Dark.ActionBar"/>
     <style name="ThemeOverlay.AppCompat.Light" parent="Base.ThemeOverlay.AppCompat.Light"/>
+    <!-- From: file:/D:/Abhik/Nanodegree/xyzreader/XYZReader/src/main/res/values/styles.xml -->
+    <eat-comment/>
+    <style name="Widget.ActionBar" parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
+        <item name="android:background">@drawable/snackbar_background</item>
+    </style>
+    <style name="Widget.ActionBar.Transparent">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+    <!-- From: file:/D:/Abhik/Nanodegree/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values/values.xml -->
+    <eat-comment/>
     <style name="Widget.AppCompat.ActionBar" parent="Base.Widget.AppCompat.ActionBar">
     </style>
     <style name="Widget.AppCompat.ActionBar.Solid" parent="Base.Widget.AppCompat.ActionBar.Solid">

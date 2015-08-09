@@ -39,7 +39,10 @@
             android:minHeight="?attr/actionBarSize"
             app:layout_scrollFlags="scroll|enterAlways" android:gravity="center" >
 
-
+            <ImageView android:src="@drawable/logo"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
         </android.support.v7.widget.Toolbar>
         </android.support.design.widget.AppBarLayout>
     </android.support.design.widget.CoordinatorLayout>
