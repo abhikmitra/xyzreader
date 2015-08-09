@@ -86,11 +86,11 @@
                 app:layout_collapseMode="parallax"/>
 
             <android.support.v7.widget.Toolbar
-                app:layout_scrollFlags="scroll"
                 android:fitsSystemWindows="true"
                 android:id="@+id/toolbar1"
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
+                app:layout_scrollFlags="scroll|enterAlways"
                 app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
                 app:layout_collapseMode="pin" />
 
