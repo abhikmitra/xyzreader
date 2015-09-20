@@ -106,6 +106,7 @@
         android:layout_height="wrap_content"
         android:src="@drawable/ic_share"
         app:elevation="6dp"
+        app:borderWidth="0dp"
         android:layout_marginRight="8dp"
         app:pressedTranslationZ="12dp"/>
 
